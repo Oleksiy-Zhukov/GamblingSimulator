@@ -1,6 +1,6 @@
-# gambling-simulator
+# Gambling Simulator
 
-Install: 
+## Install: 
 
 ```git clone https://github.com/hughanth/gambling-simulator.git```
 
@@ -26,3 +26,10 @@ Regular working cycle:
     - `git commit -m "my message (be descriptive)"`
 6. Push changes back to remote
     - `git push origin dev`
+
+## Repository Structure
+- **/src**: Contains the source code for the project.
+- **/docs**: Contains all project-related documentation, including project proposals, design documents, etc.
+- **/test**: Contains unit and integration tests.
+
+All project documentation is stored in the **/docs** directory for easy access.
