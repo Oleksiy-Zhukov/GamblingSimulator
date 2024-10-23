@@ -141,7 +141,7 @@ After the game responds to the input, and the game control receives that result 
 
 #### Overview of the Modules  
 It is important for the modules to function and communicate properly. The UIX handles the direct player inputs and the direct player output. Ensure that the player can’t change or impact the game logic or anything else that they aren’t supposed to touch. The UIX sends it to the game control module, which validates the player's command. The control module also handles the other logic surrounding the game, like where the player is in the casino, and the player's balance. It sends these requests made by the user to the running module, which is where the actual games run. This stores the rules for the games and the actual code and assets that run the game, ensuring bets and other things of the like. Below is a simple diagram showing how the modules connect.  
-![](img/img/ModuleDesign.png)  
+![](img/ModuleDesign.png)  
 Module for the game running
 
 ## Data Design
