@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638652403188116987
-    m_Hash: 565120548
+      ticks: 638658385404404056
+    m_Hash: 328020453
   m_LockFileStatus:
     m_FilePath: C:/Users/josia/Games/CSCI_265_Game/GamblingSimulator/Gambling_Simulator/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638652403188530541
-    m_Hash: 968419440
+      ticks: 638658385404414053
+    m_Hash: 2227632779
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
