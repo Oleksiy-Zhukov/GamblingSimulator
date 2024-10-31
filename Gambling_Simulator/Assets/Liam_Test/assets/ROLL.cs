@@ -13,11 +13,12 @@ public class ROLL : MonoBehaviour{
     public diceDisplay dicetwo;
 
     public void diceroll(){
-        dice1=RandomNumberGenerator.GetInt32(0,6);
-        dice2=RandomNumberGenerator.GetInt32(0,6);
+        dice1=RandomNumberGenerator.GetInt32(1,7);
+        dice2=RandomNumberGenerator.GetInt32(1,7);
 
-        diceone.ChangeSprite(dice1);
-        dicetwo.ChangeSprite(dice2);
+
+        diceone.ChangeSprite(dice1-1);
+        dicetwo.ChangeSprite(dice2-1);
 
     }
 
