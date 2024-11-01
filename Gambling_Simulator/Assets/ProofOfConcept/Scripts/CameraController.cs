@@ -10,12 +10,12 @@ public class CameraController : MonoBehaviour
     {
         transform.position = player.transform.position;
 
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.Q))
             {
                 transform.Rotate(new Vector3(0, -1, 0) * Time.deltaTime * 100, Space.World);
             }
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.E))
             {
                 transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * 100, Space.World);
             }

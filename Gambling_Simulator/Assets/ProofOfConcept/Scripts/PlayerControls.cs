@@ -5,18 +5,51 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
 
-    private Rigidbody rb;
+    public Rigidbody rb;
 
-    public GameObject camera;
+    public GameObject cam;
 
-    public float movmentIntensity;
+    public float walkSpeed;
+    public float runSpeed;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+
     }
     // Update is called once per frame
     void Update()
     {
-        
+        // var forward = cam.transform.forward;
+        // var right = cam.transform.right;
+
+        // if(Input.GetKey(KeyCode.W))
+        // {
+        //     rb.velocity = forward * walkSpeed;
+        // }
+
+        // if(Input.GetKey(KeyCode.S))
+        // {
+        //     rb.velocity = -forward * walkSpeed;
+        // }
+
+        // if(Input.GetKey(KeyCode.A))
+        // {
+        //     rb.velocity = -right * walkSpeed;
+        // }
+
+        // if(Input.GetKey(KeyCode.D))
+        // {
+        //     rb.velocity = right * walkSpeed;
+        // }
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 newVelocity = Vector3.up * rb.velocity.y;
+        float speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+
+        newVelocity.x = Input.GetAxis("Horizontal") * speed;
+        newVelocity.z = Input.GetAxis("Vertical") * speed;
+        rb.velocity = newVelocity;
     }
 }
