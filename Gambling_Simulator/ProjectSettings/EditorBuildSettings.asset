@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ProofOfConcept/3D environment/PoC_Enviroment.unity
+    guid: 35b9cff8c8011ed41af150ae1fe1d1e0
+  - enabled: 1
+    path: Assets/ProofOfConcept/Craps/Craps.unity
+    guid: dd11d67c4dc19fc4caade728230d815d
   m_configObjects: {}
