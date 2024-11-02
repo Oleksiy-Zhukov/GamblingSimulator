@@ -55,30 +55,10 @@ In this section we will talk about the aspects of these modules and what they co
 #### Game Control  
 For the player, this holds the information of how the game will be running, and will be used for communicating between the user interface and the running module. It will also hold the games active data, such as:
 
-* Where the player is in the world  
-* The Players balance  
+* The open World  
+* Storing the Players Data  
 * Validating players commands  
 * Confirming when a game has ended or when a player has quit
-
-##### Where the player is  
-This is made for confirming where the player is in the 3d open world. In the game engine it will have a layout of the world and keep track as to where the player’s character is. While the player will never see what their model will look like, we still need to represent it for collisions with the tables and the walls. We also need to make sure that when they are close enough to the games that they give them the option to start playing the game. 
-
-##### Players Balance  
-For the player it is important we store their bank balance accurately. This makes sure that when they win they get the correct amount back, and also making sure they can’t go into the negative. It will be stored using a bank account class that will have the functions of depositing and withdrawing. 
-
-##### Validating Commands  
- While the UIX module will handle the user inputs, this module will make sure the inputs they are doing have a valid command. An example would be if they are in blackjack and try to split when they aren’t allowed to, the game doesn’t let them split even though they pressed the button for it. 
-
-##### Confirming ending  
-The game ends if the player runs out of money or if they choose to leave. The game needs to validate if they run out of money to give them the game over screen, and also respond when the player makes the request to leave the game. 
-
-#### Running Module  
-This module is responsible for the game engine and running the casino games. It controls the games npc’s, the blackjack dealer and the craps game runner, and the slot machines in the game. For communication is will only communicate to the game control module, which communicates with the UIX module that the player interacts with. With this we hope that the player gets a smooth experience and doesn’t have any bugs or misinputs while the different parts communicate. This module is split up into:
-
-*  The Open World Module  
-* The Blackjack Module  
-* The Craps Module  
-* The Slots Module
 
 ##### The Open World  
 This will take care of the casino that the character moves around in to get to the various games. It controls the physical layout, the visuals of the casino, the sounds they hear, and the ability to interact with the different tables and games. It will also hold the store if we manage to include that secondary goal of ours.
@@ -94,6 +74,24 @@ In the casino we want to have the authentic sounds one would find at a real casi
 
 ###### Interacting with the games/store  
 While the player is walking around the casino they will have the options to interact with the different tables and games throughout. We want to make sure that when the player arrives at the games that it allows them to interact with it and start playing them. If we manage to include the store for cosmetics, it will also be held in the open world. It will have a storefront, with prices listed in which they can buy with their in game currency. The cosmetics they buy with then be tied to their account and they can set it up for them to be used while they play.
+
+
+##### Storing Player Data  
+For the player it is important we store their bank balance accurately. This makes sure that when they win they get the correct amount back, and also making sure they can’t go into the negative. It will be stored using a bank account class that will have the functions of depositing and withdrawing. This is also where the player’s game will be saved, this lets them continue to earn more money over multiple play sessions. When/if we implement cosmetics the ones the player has purchased will also be kept here.
+
+##### Validating Commands  
+ While the UIX module will handle the user inputs, this module will make sure the inputs they are doing have a valid command. An example would be if they are in blackjack and try to split when they aren’t allowed to, the game doesn’t let them split even though they pressed the button for it.  
+
+##### Confirming ending  
+The game ends if the player runs out of money or if they choose to leave. The game needs to validate if they run out of money to give them the game over screen, and also respond when the player makes the request to leave the game. 
+
+#### Running Module  
+This module is responsible for the game engine and running the casino games. It controls the games npc’s, the blackjack dealer and the craps game runner, and the slot machines in the game. For communication it will receive commands from the running module, then give its response to the UIX. This is in the hopes that the commands the control module gives the running module are valid, then it gets sent to the output of the UIX for the player to see. View the diagram at the end of the system context for a visual representation of it.  This module is split up into:
+ 
+* The Blackjack Module  
+* The Craps Module  
+* The Slots Module
+
 
 ##### Blackjack  
 For running the blackjack table there will need to be a few parts to make sure it runs properly. We want the player to have an authentic blackjack experience and have the game run smoothly for them. We have broken it down into the following parts:
@@ -124,7 +122,7 @@ When the player is playing craps, we want them to have an authentic experience a
 The slots game needs to have a randomizer for the different reels in order to emulate real slot machines. We plan to use a random number generator to represent the different symbols on the reels. This will be accompanied by an animation of the reels spinning, and showing the results of the spin. The logic needed for this game is simplistic in nature, making sure the player has the funds in their balance to play the game, and making sure that the payout and chances of winning are accurate. For implementation while nothing is set in stone we plan to use a class for the random generator for if we want to add more games that may need it. 
 
 #### UIX Module  
-This module is responsible for the user interface, including the player's inputs and the game's resulting outputs. This will be the only part that the player interacts with, and we want to ensure that what the player sees is accurate and is straightforward for them to follow. The UIX Module is split into two main parts, the input and the output.
+This module is responsible for the user interface, including the player's inputs and the game's resulting outputs. This will be the only part that the player interacts with, and we want to ensure that what the player sees is accurate and is straightforward for them to follow. The UIX Module is split into two main parts, the input and the output, with specifics needs for each game.
 
 ##### The Input  
 When a player presses a button on their keyboard we want to accept their input accurately. It will then take their input and send it to the game control module. We will have the keyboard mapped, with some of the ideas for different keys commands being:
@@ -136,12 +134,27 @@ When a player presses a button on their keyboard we want to accept their input a
 
 We might let customization of keybinds but that is undecided. It then sends the resulting keystrokes or mouse clicks to the running module, which then confirms the command and makes sure the player's request is valid. After the game control module gets the request, validates it, then sends it to the running module to have the game do the request made. After the game makes the request it will send it back to the game control, and then goes back to the UIX module with its output.
 
+
+
 ##### Output  
 After the game responds to the input, and the game control receives that result it then sends an output to the UIX module. This can include different visuals appearing on screen, such as a “YOU WIN\!\!” graphic if they win a hand or a “Try Again” if they lose. We also want to make sure that the sounds that go with it make sense, like a victory bell for a win or a sad trumpet sound for a loss. We also want to make sure that the rest of the HUD is accurate, like showing the correct buttons for interacting and moving around, and making sure that the balance being shown to the player is accurate. 
 
+
+##### Game Specific UIX
+We will now go over some specific needs for each game, including both the inputs and outputs.
+* Open World
+Most of the open world inputs and outputs were shown in the earlier section, with WASD movement for the open world, and the different buttons to interact. For output we need to ensure that while the player is exploring the open world that they are currently viewing aligns with what they should be actually seeing. The players balance should also be shown, as since their is no current way for the players balance to change while they are roaming the hub it should stay as a static number. 
+* Blackjack
+For blackjack the UIX module will need to incorporate player inputs for their bets and different decisions while they play. This will be done with on screen buttons they will press, with each valid betting option for them being made visible to the player. There will also be a place on the screen displaying the players current balance, as well as showing what their current bet is. For example if they have a balance of $1000 and they bet $50, it should show their $50 bet on the table and their balance should update to $950, and then change depending on the result. We also must ensure that the cards they see are accurate to what they actually have been dealt, as well as making sure they don’t see the cards they are not supposed to. 
+* Craps
+For craps we also need to show the player their current balance, as well as what their current bet is. We also have to show the bets currently available to the player, starting with either a “pass bet” and a “don’t pass bet”, and then ensuring that their subsequent bets on different point bets are accurate. We also want to show the player the former results of the dice that have been played that round. For actually playing the games it will be a button system, with a roll button and then bet buttons.We also will be showing a dice animation, and the results of the dice on screen.
+* Slots
+Same as the previous two games, we want to have the players balance updated as the game goes along and what the player is betting visible to them. This game will also be played with button presses, with different buttons to choose how many reels to bet on, the amount they are betting and a lever for them to click to spin the reels. For the spinning of the reels it will just be a randomly generated number with its corresponding symbol, and we want to have an animation for the reel visible to the player. 
+
+
 #### Overview of the Modules  
 It is important for the modules to function and communicate properly. The UIX handles the direct player inputs and the direct player output. Ensure that the player can’t change or impact the game logic or anything else that they aren’t supposed to touch. The UIX sends it to the game control module, which validates the player's command. The control module also handles the other logic surrounding the game, like where the player is in the casino, and the player's balance. It sends these requests made by the user to the running module, which is where the actual games run. This stores the rules for the games and the actual code and assets that run the game, ensuring bets and other things of the like. Below is a simple diagram showing how the modules connect.  
-![](img/ModuleDesign.png)  
+![](img/DataMovementDiagram.png)  
 Module for the game running
 
 ## Data Design
@@ -153,11 +166,12 @@ For the player we will be storing a two main aspects in their user profile, thes
 
 * The players username/id  
 * The players in game balance
+* The player’s purchased cosmetics
 
-The username/id will be something they choose themselves, being able to call themselves whatever they choose. It may be tied to an email address, but the final decision on that is yet to be made. With the user having a profile, it makes it possible to store/save what they currently have in the balance across multiple sessions. Storing their balance is important because we don’t want to short out players while not giving them things for free. One of our secondary features we hope to implement is a store to buy cosmetics, and with the players profiles being saved it makes it possible for them to keep their cosmetics tied to their account. This could also lead to some fun end game stuff, like giving the player the option to sell their cosmetics to keep playing without going bankrupt. For that to happen we need to implement the store first. The players data will be stored in the game control module, and we will encourage players to not keep sensitive data in their profile as currently with the game not needing any personal data to play we won’t be over tight on security. 
+The username/id will be something they choose themselves, being able to call themselves whatever they choose. It may be tied to an email address, but the final decision on that is yet to be made. With the user having a profile, it makes it possible to store/save what they currently have in the balance across multiple sessions. Storing their balance is important because we don’t want to short out players while not giving them things for free. One of our secondary features we hope to implement is a store to buy cosmetics, and with the players profiles being saved it makes it possible for them to keep their cosmetics tied to their account. This could also lead to some fun end game stuff, like giving the player the option to sell their cosmetics to keep playing without going bankrupt. For that to happen we need to implement the store first. The players data will be stored in the game control module, and we will encourage players to not keep sensitive data in their profile as currently with the game not needing any personal data to play we won’t be over tight on security. We plan to store the players data even past when they close the game, we want to implement this by having save states that will store the players current game to their local device. This will make the player's ability to gamble feel like there is a bit more of a risk, as they wouldn’t just be able to restart and pretend like it never happened. 
 
 ### Game Data  
-For the games we don’t play to store the data of previous play for blackjack or slots, while craps will store a few of the previous game for bets and to show the player what was just rolled. How that data will be stored is yet to be decided but it will likely be saved in a local file in the craps game folder. For the other games not storing data keeps the files needed smaller, and its not needed to keep previous games as they have no impact on the game that is currently being played. 
+For the games we don’t play to store the data of previous play for blackjack or slots, while craps will store a few of the previous game for bets and to show the player what was just rolled. How that data will be stored is yet to be decided but it will likely be saved in a local file in the craps game folder. For the other games not storing data keeps the files needed smaller, and it's not needed to keep previous games as they have no impact on the game that is currently being played. 
 
 ## Game State and Flow of Play
 
@@ -261,4 +275,5 @@ BlackJack will have a fairly straightforward flow of play, each hand having to g
 ## Transition to physical design
 
 We will be implementing our game using the unity game engine. Unity gives us the possibility to learn how to code in an already established game engine to help further our skills, while also giving us free assets to use since we lack in our artistic skills. Unity uses C\# to code its games, so our game will also be coded in C\# as well. 
+
 
