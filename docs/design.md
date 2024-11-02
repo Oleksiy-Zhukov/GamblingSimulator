@@ -152,7 +152,7 @@ For blackjack the UIX module will need to incorporate player inputs for their be
 ###### Craps
 For craps we also need to show the player their current balance, as well as what their current bet is. We also have to show the bets currently available to the player, starting with either a “pass bet” and a “don’t pass bet”, and then ensuring that their subsequent bets on different point bets are accurate. We also want to show the player the former results of the dice that have been played that round. For actually playing the games it will be a button system, with a roll button and then bet buttons.We also will be showing a dice animation, and the results of the dice on screen.
 
-######Slots
+###### Slots
 Same as the previous two games, we want to have the players balance updated as the game goes along and what the player is betting visible to them. This game will also be played with button presses, with different buttons to choose how many reels to bet on, the amount they are betting and a lever for them to click to spin the reels. For the spinning of the reels it will just be a randomly generated number with its corresponding symbol, and we want to have an animation for the reel visible to the player. 
 
 
