@@ -36,8 +36,34 @@ Our product will be a gambling simulation with multiple casino games for users t
 
 ### Code
 
-![][image1]  
-![][image2]
+	public void Shuffle(){
+   		int shuffles = UnityEngine.Random.Range(111, 1111); 
+
+   		 for (int i = 0; i < shuffles; i++) //shuffles anywhere from 111-1111 cards
+   		 {
+      			int index = UnityEngine.Random.Range(0, 52); //chooses random card in deck to replace
+        		int index2 = UnityEngine.Random.Range(0, 52); //chooses random card in deck to replace
+
+       			Card firstCard = deck[index];  //gets information of first card 
+        		Card secondCard = deck[index2]; //gets information of second card 
+        		Card tempCard = deck[index]; //holds information of first card for later swap
+
+
+        		firstCard = secondCard; //swaps first card with second
+        		secondCard = tempCard;  //swaps second card with first
+
+        		deck[index] = firstCard;  //places changed card into deck
+        		deck[index2] = secondCard; //places changed card into deck
+   		 }
+	}
+ 	public void Click()
+	{
+  		Shuffle();
+
+    		cardInfoText1.text = deck[0].value + " of " + deck[0].suit.ToString();
+    		cardInfoText2.text = deck[1].value + " of " + deck[1].suit.ToString();
+    		cardInfoText3.text = deck[2].value + " of " + deck[2].suit.ToString();
+	}
 
 ### Results
 
