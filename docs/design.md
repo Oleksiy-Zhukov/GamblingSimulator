@@ -1,4 +1,4 @@
-# CSCI 265 Design (Phase 3\)
+# CSCI 265 Design (Phase 5 Updated)
 
 ## Team name: Section 3
 
@@ -44,87 +44,54 @@ With our game it will not be multiplayer, so it will just be a game downloaded a
 
 ## Architectural Design and Module Descriptions
 
-In this section we go over the different modules the game is split up into. Our Preliminary Design splits the game up into 3 different modules
+The structure of Gambling Simulator is built around three core modules, each with distinct responsibilities: the Game Control Module, the Running Module, and the UIX Module. These modules are designed to work together seamlessly, with each handling a specific aspect of the game’s operation. The Game Control Module is responsible for managing the overall game state, player data, and the flow of information between the other two modules. The Running Module contains the game mechanics for each of the casino games (Blackjack, Craps, Slots), overseeing all in-game logic and interactions, while the UIX Module focuses on the user interface, ensuring players can easily interact with the game and see real-time updates. These three modules communicate through well-defined interfaces that ensure smooth data exchange, consistency, and the overall integrity of the system. This modular architecture allows for easier maintenance and future expansion of the game, such as adding new games or features without disrupting the core system.
 
-1. The Game Control Module  
-2. The Running Module  
-3. The UIX Module
+### Game Control Module
+The Game Control Module is central to managing the overall flow of the game. It functions as the intermediary between the player and the game world, coordinating data storage, gameplay events, and communication with both the Running and UIX Modules. The primary responsibility of this module is to track and maintain the current state of the game, including the player’s progress, balance, and any other relevant data that affects gameplay.
 
-In this section we will talk about the aspects of these modules and what they control. As well as how they will communicate with the other modules, with more description on the games data storage in the section following
+A key aspect of this module is the management of the Open World, which encompasses the casino layout and environment. The Open World defines how the player navigates the casino, including the physical layout of the space, the sounds that populate the environment, and the various points of interaction within the casino. For example, as the player moves around the casino, the Game Control Module will handle the interactions between the player and the various game tables, ensuring that the player can move freely, approach a table, and begin playing when they are ready. Additionally, the Open World will handle the visual design of the casino, making sure that the environment feels immersive, with vibrant lighting, sound effects, and realistic 3D models that simulate a real-world casino experience.
 
-#### Game Control  
-For the player, this holds the information of how the game will be running, and will be used for communicating between the user interface and the running module. It will also hold the games active data, such as:
+Another crucial responsibility of the Game Control Module is to store player data. This includes managing the player's balance, tracking their winnings or losses, and saving progress throughout the gameplay. Player data is encapsulated in a BankAccount class, which handles deposits and withdrawals, ensuring that the player’s balance is always accurate and cannot go negative. This class also stores additional information such as cosmetic items purchased, player preferences, and game history, allowing players to resume their progress in subsequent sessions. This data storage system is fundamental to maintaining the continuity of the player's experience across multiple play sessions.
 
-* The open World  
-* Storing the Players Data  
-* Validating players commands  
-* Confirming when a game has ended or when a player has quit
+The Game Control Module is also in charge of validating player commands. As players interact with the game’s interface, this module ensures that their actions are valid according to the rules of the game they are playing. For instance, in Blackjack, the module will ensure that the player cannot attempt actions like splitting cards when the game rules don’t permit it. It checks each input against the current game state and validates that the player’s actions are appropriate for the situation, helping to enforce the game's rules and maintain fairness.
 
-##### The Open World  
-This will take care of the casino that the character moves around in to get to the various games. It controls the physical layout, the visuals of the casino, the sounds they hear, and the ability to interact with the different tables and games. It will also hold the store if we manage to include that secondary goal of ours.
+Finally, the Game Control Module is responsible for confirming the end of a game. This could happen either when the player runs out of money or when the player chooses to leave. The module must detect when these conditions are met and communicate the game’s conclusion to the player. It also triggers appropriate transitions, such as displaying the game over screen or asking if the player wants to play again.
 
-###### The Layout  
+### Running Module
+The Running Module is the heart of the game’s mechanics. It handles the logic for each of the casino games available in the simulator, including Blackjack, Craps, and Slots. This module is in charge of processing the game rules, generating outcomes, and controlling the non-playable characters (NPCs), such as the Blackjack dealer, the Craps roller, or the slot machine’s automated behavior.
+
+The Blackjack Module within the Running Module is responsible for the card deck, the rules of the game, and player interactions. It controls the dealing of cards, ensuring that the deck is shuffled and dealt properly, and processes actions like hitting, standing, doubling down, or splitting, based on the player’s choices. The module also manages the logic for determining hand values, busts, and game outcomes, ensuring the game runs smoothly and according to standard Blackjack rules.
+
+The Craps Module manages the dice-rolling mechanics of the game. It processes the player’s bet, rolls the dice, and determines the outcome based on the rules of Craps. It tracks the current point, adjusts the player’s balance depending on the results of each roll, and handles the transition between different phases of the game, such as the come-out roll or the point phase. It also manages the player’s interactions with NPCs, such as the shooter, and provides feedback through the UIX Module.
+
+The Slots Module operates the slot machines in the game. This module handles the spinning of the reels, ensuring that each spin generates a fair and random result. It also manages the payout calculations, adjusting the player’s balance based on the outcome of each spin. Like the other game modules, it interacts with the UIX Module to provide real-time feedback to the player, displaying the results of the spin and any winnings.
+
+Throughout the Running Module, each game communicates with the UIX Module, sending updates on game states, player actions, and outcomes. The module ensures that all game mechanics are processed according to the rules, providing a seamless experience where game outcomes are calculated in real-time.
+
+### UIX Module
+The UIX Module is the module responsible for managing the user interface and the player’s interaction with the game world. It serves as the bridge between the player and the core game mechanics, ensuring that players can interact with the game in a clear, intuitive, and enjoyable way. The UIX Module adapts to different types of games, offering custom interfaces for each one.
+
+For the casino environment itself, the UIX Module manages the open world interface, displaying the virtual casino, the player’s current location, and all available games the player can interact with. It provides visual feedback on the player’s progress, such as displaying the balance and any in-game information like tutorial tips or help messages. As the player moves around the casino, the UIX Module will update to show which games are available for interaction, providing clear instructions for starting a game or interacting with NPCs.
+
+The UIX Module also handles the custom game interfaces. Each game, such as Blackjack, Craps, and Slots, has its own unique interface elements that need to be displayed to the player. The UIX Module will adapt the interface to each specific game, displaying relevant information like the current hand in Blackjack, the dice roll results in Craps, or the current symbols on the reels in Slots. This module will update dynamically as the game progresses, reflecting changes in the game state in real-time.
+
+Another important role of the UIX Module is to handle user input. Whether the player is placing bets, interacting with game buttons, or navigating the casino, the UIX Module listens for and processes all player inputs. It communicates with the Running Module to send commands based on the player’s actions, such as confirming a bet or selecting an action like "hit" or "stand" in Blackjack. After receiving the player’s input, the UIX Module updates the screen to reflect the new game state, ensuring the player always knows what’s happening in the game.
+
+Finally, the UIX Module must effectively communicate with the Running Module to display the outcomes of game actions. The UIX Module needs to continuously receive data from the Running Module about the current game state, such as card draws, dice rolls, or slot spins, and update the player’s interface accordingly. This ensures that the player’s experience is always in sync with the underlying game mechanics, providing an interactive and immersive experience.
+
+### The Layout  
 This is where the physical layout for the casino is, mapping where the tables will be. It also makes sure that the player can’t go through the walls or move through the tables, blocking their movement to ensure they don’t fall through the world.
 
-###### The Visuals  
+### The Visuals  
 We want the player to feel like they really are at the casino, this includes making it look as authentic as possible. We plan to have bright lights surrounding the slot machines, a classic looking carpet floor, and tables with dealers that seem inviting to the player. There will also be posters/murals on the walls with slogans encouraging gambling. This isn’t going to be our primary focus, as functional gameplay is first priority.
 
-###### The Sounds  
+### The Sounds  
 In the casino we want to have the authentic sounds one would find at a real casino. This includes loud dings of slot machines, and people talking/cheering for others wins. There will also be some music playing to make the game feel more atmospheric, and we don’t want to have a quiet and eerie feeling in the casino, we want it to be fun and feel exciting.  
 
-###### Interacting with the games/store  
-While the player is walking around the casino they will have the options to interact with the different tables and games throughout. We want to make sure that when the player arrives at the games that it allows them to interact with it and start playing them. If we manage to include the store for cosmetics, it will also be held in the open world. It will have a storefront, with prices listed in which they can buy with their in game currency. The cosmetics they buy with then be tied to their account and they can set it up for them to be used while they play.
-
-
-##### Storing Player Data  
-For the player it is important we store their bank balance accurately. This makes sure that when they win they get the correct amount back, and also making sure they can’t go into the negative. It will be stored using a bank account class that will have the functions of depositing and withdrawing. This is also where the player’s game will be saved, this lets them continue to earn more money over multiple play sessions. When/if we implement cosmetics the ones the player has purchased will also be kept here.
-
-##### Validating Commands  
+### Validating Commands  
  While the UIX module will handle the user inputs, this module will make sure the inputs they are doing have a valid command. An example would be if they are in blackjack and try to split when they aren’t allowed to, the game doesn’t let them split even though they pressed the button for it.  
 
-##### Confirming ending  
-The game ends if the player runs out of money or if they choose to leave. The game needs to validate if they run out of money to give them the game over screen, and also respond when the player makes the request to leave the game. 
-
-#### Running Module  
-This module is responsible for the game engine and running the casino games. It controls the games npc’s, the blackjack dealer and the craps game runner, and the slot machines in the game. For communication it will receive commands from the running module, then give its response to the UIX. This is in the hopes that the commands the control module gives the running module are valid, then it gets sent to the output of the UIX for the player to see. View the diagram at the end of the system context for a visual representation of it.  This module is split up into:
- 
-* The Blackjack Module  
-* The Craps Module  
-* The Slots Module
-
-
-##### Blackjack  
-For running the blackjack table there will need to be a few parts to make sure it runs properly. We want the player to have an authentic blackjack experience and have the game run smoothly for them. We have broken it down into the following parts:
-
-* Card dealing  
-* Dealer Logic  
-* Game logic
-
-###### Card Dealing  
-Dealing cards in a proper way is essential for any good casino. We are going to make a class for cards that ensures that any card has just as likely of chance as any of the other 52, and that when a card is dealt it can’t appear again that hand. For example when the first card is dealt it is just as likely to be the two of diamonds as it is to be the ace of clubs, and when one of those cards is dealt it can’t then be dealt again. There will also be an animation for the dealing to give the player something to look at while the deal is happening. We haven’t fully decided on how we are going to implement it yet but it will be in a class. We plan to have it in a class for further expansion, making future card games easier to implement.
-
-###### Dealer Logic  
-When the player is playing blackjack we want to make sure that the dealer is doing what it is supposed to. For the dealer they are to hit until their cards reach a value of at least 17\. We want to make sure the dealer at least reaches that. It must keep the dealer honest by having them able to bust on a hand. We will likely also have this be implemented as a class with specifics yet to be figured out.
-
-###### Game Logic  
-While the player is playing, we want the proper options to be available to the player. This includes having the two staple moves, hit and stand, available to the players at all time while the play is still happening, and making sure that the other betting options open up when the options arrive. Those options include split, when they have two cards with the same face/value, double, when their cards have a total value of 9-11, and insurance, when the dealer has a face up ace. Implementation of this is yet to be decided on how it will be done.
-
-##### Craps  
-Accurate bet logic is crucial for an accurate, fun and fair craps experience. To ensure this, we must correctly implement the payout odds, the win/lose criteria, and availability of each bet able to be placed. 
-
-###### Dice  
-For the dice we plan to implement it with a random number generator. With it being a d6 it will be a random number between 1 and 6\. It will do it twice, for the two dice that are used in craps. It then adds them together to get a final value. We want it to feel like real dice, with the same odds for all numbers to happen. There will also be an animation for the dice to give the player something to look at while it generates a number. We will plan to have this implemented as a class.
-
-###### Game Logic  
-When the player is playing craps, we want them to have an authentic experience and for it to feel smooth. There will be systems in place to ensure that the players bet is tracked properly, that the outcome matches what the player sees, and make sure that the correct payout to the outcome happens. Proper betting odds and the dice randomness will be important to monitor to ensure that they running in tandem, as we don’t want the dice to give us one thing and the game to interpret it as another. We have yet to decide how it will be implemented.   
-
-##### Slots  
-The slots game needs to have a randomizer for the different reels in order to emulate real slot machines. We plan to use a random number generator to represent the different symbols on the reels. This will be accompanied by an animation of the reels spinning, and showing the results of the spin. The logic needed for this game is simplistic in nature, making sure the player has the funds in their balance to play the game, and making sure that the payout and chances of winning are accurate. For implementation while nothing is set in stone we plan to use a class for the random generator for if we want to add more games that may need it. 
-
-#### UIX Module  
-This module is responsible for the user interface, including the player's inputs and the game's resulting outputs. This will be the only part that the player interacts with, and we want to ensure that what the player sees is accurate and is straightforward for them to follow. The UIX Module is split into two main parts, the input and the output, with specifics needs for each game.
-
-##### The Input  
+### The Input  
 When a player presses a button on their keyboard we want to accept their input accurately. It will then take their input and send it to the game control module. We will have the keyboard mapped, with some of the ideas for different keys commands being:
 
 * WASD movement  
@@ -134,29 +101,15 @@ When a player presses a button on their keyboard we want to accept their input a
 
 We might let customization of keybinds but that is undecided. It then sends the resulting keystrokes or mouse clicks to the running module, which then confirms the command and makes sure the player's request is valid. After the game control module gets the request, validates it, then sends it to the running module to have the game do the request made. After the game makes the request it will send it back to the game control, and then goes back to the UIX module with its output.
 
-
-
-##### Output  
+### Output  
 After the game responds to the input, and the game control receives that result it then sends an output to the UIX module. This can include different visuals appearing on screen, such as a “YOU WIN\!\!” graphic if they win a hand or a “Try Again” if they lose. We also want to make sure that the sounds that go with it make sense, like a victory bell for a win or a sad trumpet sound for a loss. We also want to make sure that the rest of the HUD is accurate, like showing the correct buttons for interacting and moving around, and making sure that the balance being shown to the player is accurate. 
 
 
-##### Game Specific UIX
+### Game Specific UIX
 We will now go over some specific needs for each game, including both the inputs and outputs.
 
-###### Open World
-Most of the open world inputs and outputs were shown in the earlier section, with WASD movement for the open world, and the different buttons to interact. For output we need to ensure that while the player is exploring the open world that they are currently viewing aligns with what they should be actually seeing. The players balance should also be shown, as since their is no current way for the players balance to change while they are roaming the hub it should stay as a static number. 
 
-###### Blackjack
-For blackjack the UIX module will need to incorporate player inputs for their bets and different decisions while they play. This will be done with on screen buttons they will press, with each valid betting option for them being made visible to the player. There will also be a place on the screen displaying the players current balance, as well as showing what their current bet is. For example if they have a balance of $1000 and they bet $50, it should show their $50 bet on the table and their balance should update to $950, and then change depending on the result. We also must ensure that the cards they see are accurate to what they actually have been dealt, as well as making sure they don’t see the cards they are not supposed to. 
-
-###### Craps
-For craps we also need to show the player their current balance, as well as what their current bet is. We also have to show the bets currently available to the player, starting with either a “pass bet” and a “don’t pass bet”, and then ensuring that their subsequent bets on different point bets are accurate. We also want to show the player the former results of the dice that have been played that round. For actually playing the games it will be a button system, with a roll button and then bet buttons.We also will be showing a dice animation, and the results of the dice on screen.
-
-###### Slots
-Same as the previous two games, we want to have the players balance updated as the game goes along and what the player is betting visible to them. This game will also be played with button presses, with different buttons to choose how many reels to bet on, the amount they are betting and a lever for them to click to spin the reels. For the spinning of the reels it will just be a randomly generated number with its corresponding symbol, and we want to have an animation for the reel visible to the player. 
-
-
-#### Overview of the Modules  
+### Overview of the Modules  
 It is important for the modules to function and communicate properly. The UIX handles the direct player inputs and the direct player output. Ensure that the player can’t change or impact the game logic or anything else that they aren’t supposed to touch. The UIX sends it to the game control module, which validates the player's command. The control module also handles the other logic surrounding the game, like where the player is in the casino, and the player's balance. It sends these requests made by the user to the running module, which is where the actual games run. This stores the rules for the games and the actual code and assets that run the game, ensuring bets and other things of the like. Below is a simple diagram showing how the modules connect.  
 ![](img/DataMovementDiagram.PNG)  
 Module for the game running
@@ -279,5 +232,3 @@ BlackJack will have a fairly straightforward flow of play, each hand having to g
 ## Transition to physical design
 
 We will be implementing our game using the unity game engine. Unity gives us the possibility to learn how to code in an already established game engine to help further our skills, while also giving us free assets to use since we lack in our artistic skills. Unity uses C\# to code its games, so our game will also be coded in C\# as well. 
-
-

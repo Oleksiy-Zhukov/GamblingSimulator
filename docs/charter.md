@@ -13,8 +13,7 @@
  \- Spencer Strutt, [sstrutt99@gmail.com](mailto:sstrutt99@gmail.com)  
  \- Daniel Robinson, [dwgrobinson02@gmail.com](mailto:dwgrobinson@gmail.com)  
  \- Liam Khoo, [Liam K](mailto:LiamKhoo4@gmail.com) [liamkhoo4@gmail.com](mailto:liamkhoo4@gmail.com)   
- \- Josiah Bowden, [josiahbowden4@gmail.com](mailto:josiahbowden4@gmail.com)  
- \- Hugh Joly, [hajoly9@gmail.com](mailto:hajoly9@gmail.com)   
+ \- Josiah Bowden, [josiahbowden4@gmail.com](mailto:josiahbowden4@gmail.com)    
  \- Ozan Baydogan, [ozanbaydogan@gmail.com](mailto:ozanbaydogan@gmail.com)  
  \- Oleksii Zhukov, [zhukov.oleksiy@gmail.com](mailto:zhukov.oleksiy@gmail.com)  
  \- Tim Jones, twajones1992@gmail.com
@@ -39,7 +38,6 @@ Provide a list of your team members and their initially assigned roles:
  \- Daniel, Blackjack Game, Documentation  
  \- Spencer, Blackjack Game  
  \- Oleksii \- Slots Game, Lead Developer  
- \- Hugh, Slots Game, QA / Testing  
  \- Liam,  Craps  
  \- Tim, Craps  
  \- Ozan, UI / UX Design  
