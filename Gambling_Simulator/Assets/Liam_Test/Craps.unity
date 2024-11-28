@@ -407,7 +407,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &563885551
 Canvas:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ Canvas:
   m_GameObject: {fileID: 563885546}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 840932486}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -426,7 +426,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -439,8 +439,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563885546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 0.060646135, y: 0.060646135, z: 0.060646135}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1801024366}
@@ -451,8 +451,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 434.1662}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563885553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +573,7 @@ GameObject:
   - component: {fileID: 724185228}
   - component: {fileID: 724185227}
   - component: {fileID: 724185226}
+  - component: {fileID: 724185229}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -655,6 +656,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 724185229}
+        m_TargetAssemblyTypeName: getBetAmounts, Assembly-CSharp
+        m_MethodName: Start
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &724185227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5a7b09884be6cc24e99fd459a79793e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -693,6 +706,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724185223}
   m_CullTransparentMesh: 1
+--- !u!114 &724185229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724185223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2337c1aa1cac20146b79bb0f8049a65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 563885551}
+  five: {fileID: 7683371306046440498, guid: 8682d4e4c5e511e41801e699bd74aa2b, type: 3}
+  ten: {fileID: 1515731002353191237, guid: cf088b21cd91e5646a6ba04ad815ca91, type: 3}
+  twofive: {fileID: 1451504733522154877, guid: faeee6719b2da0c49953677a927de10c, type: 3}
+  fifty: {fileID: 6204201911234603056, guid: 64f5f9a19e8bbc6498b4a47c0876af58, type: 3}
 --- !u!1 &840932484
 GameObject:
   m_ObjectHideFlags: 0
