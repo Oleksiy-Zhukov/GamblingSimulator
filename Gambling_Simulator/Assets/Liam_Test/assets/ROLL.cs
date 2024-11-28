@@ -22,7 +22,10 @@ public class ROLL : MonoBehaviour{
 
     }
 
-
+    public int GetDiceSum()
+    {
+        return dice1 + dice2;
+    }
     
 
 
