@@ -38,7 +38,7 @@ public void fart() {
 
 }
 
-  void UpdateValue(int index)
+void UpdateValue(int index)
     {
         // Increment the value associated with this button
         value=index;
@@ -50,7 +50,6 @@ public void fart() {
       Destroy(fiftydolla);
 
     }
-
 
 
 }
