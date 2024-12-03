@@ -358,7 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Liam_Test/assets/Craps Game.cs"
 "Assets/Liam_Test/assets/diceDisplay.cs"
-"Assets/Liam_Test/assets/getBetType.cs"
+"Assets/Liam_Test/assets/playMore.cs"
 "Assets/Liam_Test/assets/ROLL.cs"
 "Assets/Liam_Test/Chips/getBetAmounts.cs"
 "Assets/Liam_Test/Chips/NewBehaviourScript.cs"

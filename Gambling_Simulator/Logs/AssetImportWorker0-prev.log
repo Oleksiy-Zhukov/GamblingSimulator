@@ -15,7 +15,7 @@ C:/Users/liamk/OneDrive/Desktop/GS/GamblingSimulator/Gambling_Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51895
+60613
 Successfully changed project path to: C:/Users/liamk/OneDrive/Desktop/GS/GamblingSimulator/Gambling_Simulator
 C:/Users/liamk/OneDrive/Desktop/GS/GamblingSimulator/Gambling_Simulator
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,14 +49,14 @@ C:/Users/liamk/OneDrive/Desktop/GS/GamblingSimulator/Gambling_Simulator
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3120]  Target information:
+Player connection [12824]  Target information:
 
-Player connection [3120]  * "[IP] 10.253.9.111 [Port] 0 [Flags] 2 [Guid] 856771395 [EditorId] 856771395 [Version] 1048832 [Id] WindowsEditor(7,SurfaceLiam) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [12824]  * "[IP] 10.253.9.111 [Port] 0 [Flags] 2 [Guid] 3535754576 [EditorId] 3535754576 [Version] 1048832 [Id] WindowsEditor(7,SurfaceLiam) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [3120] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [3120] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12824] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12824] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 27.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.47f1 (88c277b85d21)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/Resources/UnitySubsystems
@@ -72,46 +72,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.47f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.027270 seconds.
-- Loaded All Assemblies, in  0.958 seconds
+Registered in 0.031575 seconds.
+- Loaded All Assemblies, in  1.008 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.776 seconds
-Domain Reload Profiling: 1730ms
-	BeginReloadAssembly (355ms)
+- Finished resetting the current domain, in  0.676 seconds
+Domain Reload Profiling: 1679ms
+	BeginReloadAssembly (297ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (82ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (147ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (355ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (156ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (294ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (337ms)
-			TypeCache.Refresh (333ms)
-				TypeCache.ScanAssembly (303ms)
+		AnalyzeDomain (423ms)
+			TypeCache.Refresh (419ms)
+				TypeCache.ScanAssembly (390ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (777ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (677ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (645ms)
+		SetupLoadedEditorAssemblies (560ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (13ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (471ms)
-			ProcessInitializeOnLoadMethodAttributes (126ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (401ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,7 +120,7 @@ Domain Reload Profiling: 1730ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.763 seconds
+- Loaded All Assemblies, in  1.687 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -128,47 +128,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.755 seconds
-Domain Reload Profiling: 3508ms
-	BeginReloadAssembly (430ms)
+- Finished resetting the current domain, in  1.594 seconds
+Domain Reload Profiling: 3271ms
+	BeginReloadAssembly (412ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (93ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (121ms)
-	LoadAllAssembliesAndSetupDomain (1082ms)
-		LoadAssemblies (849ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (83ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (110ms)
+	LoadAllAssembliesAndSetupDomain (1043ms)
+		LoadAssemblies (835ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (493ms)
-			TypeCache.Refresh (440ms)
-				TypeCache.ScanAssembly (407ms)
-			ScanForSourceGeneratedMonoScriptInfo (37ms)
+		AnalyzeDomain (448ms)
+			TypeCache.Refresh (392ms)
+				TypeCache.ScanAssembly (359ms)
+			ScanForSourceGeneratedMonoScriptInfo (39ms)
 			ResolveRequiredComponents (14ms)
-	FinalizeReload (1757ms)
+	FinalizeReload (1595ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1366ms)
+		SetupLoadedEditorAssemblies (1240ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (172ms)
-			ProcessInitializeOnLoadAttributes (1086ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (20ms)
+			BeforeProcessingInitializeOnLoad (143ms)
+			ProcessInitializeOnLoadAttributes (993ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (19ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 15.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 15.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3152 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (54.6 KB). Loaded Objects now: 3619.
-Memory consumption went from 122.9 MB to 122.9 MB.
-Total: 6.286800 ms (FindLiveObjects: 0.259400 ms CreateObjectMapping: 0.226700 ms MarkObjects: 5.590400 ms  DeleteObjects: 0.207700 ms)
+Unloading 3140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (54.5 KB). Loaded Objects now: 3607.
+Memory consumption went from 122.8 MB to 122.7 MB.
+Total: 6.448200 ms (FindLiveObjects: 0.680900 ms CreateObjectMapping: 0.458000 ms MarkObjects: 5.137600 ms  DeleteObjects: 0.165600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,1177 +186,141 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19070.784691 seconds.
-  path: Assets/Liam_Test/assets/DONTpass.png
-  artifactKey: Guid(842f01deb2eed1a449a9e7cd9a540d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/DONTpass.png using Guid(842f01deb2eed1a449a9e7cd9a540d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f6ef16f4a0d3164e6b54033155efaad8') in 0.165246 seconds
+  Time since last request: 353683.225371 seconds.
+  path: Assets/Liam_Test/Chips/five.prefab
+  artifactKey: Guid(8682d4e4c5e511e41801e699bd74aa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/Chips/five.prefab using Guid(8682d4e4c5e511e41801e699bd74aa2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '380224f3c91890ba32f243f1b1b8626c') in 0.077780 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 173.950512 seconds.
-  path: Assets/Liam_Test/assets/diceDisplay.cs
-  artifactKey: Guid(e9ab593e89315154aa0222a4f95213ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/diceDisplay.cs using Guid(e9ab593e89315154aa0222a4f95213ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3e45292067aa8835348797e91ae83845') in 0.000896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 15.358784 seconds.
-  path: Assets/Liam_Test/assets/diceImages
-  artifactKey: Guid(4e21a75e350e2624288b56df63339dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/diceImages using Guid(4e21a75e350e2624288b56df63339dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'fc22c2234c14419373a3b57b3e10f324') in 0.000879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.576014 seconds.
-  path: Assets/Liam_Test/assets/Craps Game.cs
-  artifactKey: Guid(33b8e6afe79c1444cb40894e838a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/Craps Game.cs using Guid(33b8e6afe79c1444cb40894e838a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1625b9c5eb0fa1256a9c784e985a0e76') in 0.001507 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.364656 seconds.
-  path: Assets/Liam_Test/assets/diceImages/dice.png
-  artifactKey: Guid(198370fbbb7aa0949bc542d809a54935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/diceImages/dice.png using Guid(198370fbbb7aa0949bc542d809a54935) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4ad30753c77f98e630587d2b043ee16c') in 0.034088 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 3.359314 seconds.
+  Time since last request: 0.000138 seconds.
   path: Assets/Liam_Test/Chips/getBetAmounts.cs
   artifactKey: Guid(2337c1aa1cac20146b79bb0f8049a65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Liam_Test/Chips/getBetAmounts.cs using Guid(2337c1aa1cac20146b79bb0f8049a65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '52ce8f7e9c022bfffa58b4154aeae73c') in 0.000637 seconds
+ -> (artifact id: '52ce8f7e9c022bfffa58b4154aeae73c') in 0.001580 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 12.259126 seconds.
-  path: Assets/Liam_Test/Chips/getBetAmounts1.cs
+  Time since last request: 13.720841 seconds.
+  path: Assets/Liam_Test/assets
+  artifactKey: Guid(5def7ab8b0351db49a49c529f219706c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets using Guid(5def7ab8b0351db49a49c529f219706c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a8bba04de69c314acdc8a4229bdfe967') in 0.001513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.071589 seconds.
+  path: Assets/Liam_Test/assets/Craps Game.cs
+  artifactKey: Guid(33b8e6afe79c1444cb40894e838a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/Craps Game.cs using Guid(33b8e6afe79c1444cb40894e838a85fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1625b9c5eb0fa1256a9c784e985a0e76') in 0.001402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Liam_Test/assets/getBetType.cs
   artifactKey: Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/Chips/getBetAmounts1.cs using Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '68dd934fa3e508595ede47900c816e24') in 0.001481 seconds
+Start importing Assets/Liam_Test/assets/getBetType.cs using Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c8d790f937e95884ee8d24cb6ec208b1') in 0.001257 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 7.020468 seconds.
-  path: Assets/Liam_Test/Chips/getBetType.cs
-  artifactKey: Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/Chips/getBetType.cs using Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '327498d4f0e3644fd7694b0dff521098') in 0.000902 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 104.846275 seconds.
-  path: Assets/Liam_Test/Chips/getBetType.cs
-  artifactKey: Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/Chips/getBetType.cs using Guid(a727638fb87c1a241a8e6318008a1bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '213dd54a6d1fa0eb9b7443c1dc105db9') in 0.001540 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.713 seconds
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.426 seconds
-Domain Reload Profiling: 4135ms
-	BeginReloadAssembly (252ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (351ms)
-		LoadAssemblies (462ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (3427ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1381ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (12ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (189ms)
-			ProcessInitializeOnLoadAttributes (1062ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (25ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 17.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3132 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3626.
-Memory consumption went from 118.8 MB to 118.8 MB.
-Total: 8.389000 ms (FindLiveObjects: 0.811300 ms CreateObjectMapping: 1.247300 ms MarkObjects: 6.024800 ms  DeleteObjects: 0.300500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/getBetType.cs: cce1f171a7da1b2404aed29f8cf4560b -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: c2b5466ebdeb822c65cf6f084a6cd602 -> d497889d6f7219a2ffb0e5982624a5e6
-========================================================================
-Received Import Request.
-  Time since last request: 198.704036 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-v08-256.png
-  artifactKey: Guid(3a2c52a0464dc4312a8fe58ca2278b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-v08-256.png using Guid(3a2c52a0464dc4312a8fe58ca2278b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '43a43f06410025e4c5df08a090793576') in 0.188969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/spinLeft-256.gif
-  artifactKey: Guid(24330292b75b04e13a74fc1b6ba00f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/spinLeft-256.gif using Guid(24330292b75b04e13a74fc1b6ba00f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '587600d9a59be8f6c3d547f19e5bb0a5') in 0.038688 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/spinRight-256.gif
-  artifactKey: Guid(3654b67ab168041caa5e090a710d6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/spinRight-256.gif using Guid(3654b67ab168041caa5e090a710d6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ec749feca283d0073a12235aebfd098c') in 0.033677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/spinRight-32.gif
-  artifactKey: Guid(201c199958b53485991bebfea81dd120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/spinRight-32.gif using Guid(201c199958b53485991bebfea81dd120) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1792359b852ca9f2875603a7f92b584f') in 0.035478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.746625 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-v08-32.png
-  artifactKey: Guid(45048d317d2394ae0a86c7160a575d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-v08-32.png using Guid(45048d317d2394ae0a86c7160a575d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '133a5f14ae70d083ab5264a57150abe7') in 0.023492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-v08-128.png
-  artifactKey: Guid(1eeb6b55c1b4545e8b6594f96a1577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-v08-128.png using Guid(1eeb6b55c1b4545e8b6594f96a1577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b3f6f750e4e0ea24895c1b84a9afb50c') in 0.030283 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-v06-256.png
-  artifactKey: Guid(d2fa0f3b291b2447b9e37502f914cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-v06-256.png using Guid(d2fa0f3b291b2447b9e37502f914cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c7f8b322c4b3a3f4b05df97ce673a2aa') in 0.029487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-v07-64.png
-  artifactKey: Guid(08f7400e79d374c4884fd7bf2b286616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-v07-64.png using Guid(08f7400e79d374c4884fd7bf2b286616) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f2b1e0473bfef10eb377e17c94ef446c') in 0.028529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-v07-256.png
-  artifactKey: Guid(99602803e6d5c4ca988827294e12e312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-v07-256.png using Guid(99602803e6d5c4ca988827294e12e312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'bddcf61a0edd230808559465455e5b73') in 0.038608 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.038275 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-v05-256.png
-  artifactKey: Guid(a1267deec8e514abdb8b4d92b39e1f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-v05-256.png using Guid(a1267deec8e514abdb8b4d92b39e1f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2d1916c30e7ce2e017c5af2401a8141b') in 0.023985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-v06-64.png
-  artifactKey: Guid(af88f4a5639644ba78055166e9607c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-v06-64.png using Guid(af88f4a5639644ba78055166e9607c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ab23610b2d1c7f527911cb30fee2d947') in 0.039466 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.043708 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-v04-64.png
-  artifactKey: Guid(25dca8bf6d42748e2b6a1ea17ce87440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-v04-64.png using Guid(25dca8bf6d42748e2b6a1ea17ce87440) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c8cb6c675a1a3c50b3f0b6c603897a29') in 0.027482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-v04-256.png
-  artifactKey: Guid(e766d2786ee374eda8e4dc5ddacc3e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-v04-256.png using Guid(e766d2786ee374eda8e4dc5ddacc3e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '78c822709d33b76513dde811b3bc985a') in 0.030265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-v05-128.png
-  artifactKey: Guid(1eed3f9fd41f44a12b1f2c9a97da9ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-v05-128.png using Guid(1eed3f9fd41f44a12b1f2c9a97da9ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9b005bb378e0784efb48ae353fe50dd1') in 0.041596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.017154 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-h07-256.png
-  artifactKey: Guid(151ea516bd3174ad995794e429f0fa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-h07-256.png using Guid(151ea516bd3174ad995794e429f0fa7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b2bb588d90f8033947b9356f3ff8b2b4') in 0.027033 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-h08-64.png
-  artifactKey: Guid(ec0adbdd3704446ebac44f4fec0d4856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-h08-64.png using Guid(ec0adbdd3704446ebac44f4fec0d4856) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '768c73f03435961f16eae2a59f9169b5') in 0.024295 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-h08-256.png
-  artifactKey: Guid(245fd7843dfb64db1ad03e3cc6065252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-h08-256.png using Guid(245fd7843dfb64db1ad03e3cc6065252) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4b50e6202500f20162a72bd93f01310d') in 0.028958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-v01-128.png
-  artifactKey: Guid(f87b0a0deb5814eebb682acc9dc213f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-v01-128.png using Guid(f87b0a0deb5814eebb682acc9dc213f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3f664401d1d06daa76e291cde0f10255') in 0.026317 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-v02-32.png
-  artifactKey: Guid(aa2bf4ff4e72f4a309712aacbef29cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-v02-32.png using Guid(aa2bf4ff4e72f4a309712aacbef29cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'aa188d120a28577fe49ab85a0cf53b0a') in 0.024122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-v02-128.png
-  artifactKey: Guid(0642602d45700483f8f276a8eca1aea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-v02-128.png using Guid(0642602d45700483f8f276a8eca1aea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1eedf4aca16a1efe1c40e74e055e0d58') in 0.028739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-v03-64.png
-  artifactKey: Guid(11274c1651cc54bdbb94b71f6bac9bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-v03-64.png using Guid(11274c1651cc54bdbb94b71f6bac9bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '13b542f6711002758c4ba36149b4dfa1') in 0.024496 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-v03-128.png
-  artifactKey: Guid(f26db8eda30bf438a9147771b2c14062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-v03-128.png using Guid(f26db8eda30bf438a9147771b2c14062) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8a9a7fd31e9bea341bcda0af41995d5d') in 0.044829 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-v03-32.png
-  artifactKey: Guid(fcca382af04f4416aac8c8fd8f23f332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-v03-32.png using Guid(fcca382af04f4416aac8c8fd8f23f332) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a78e99ac2af4a8fcc41d538a677d77d1') in 0.044636 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.023505 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-h01-32.png
-  artifactKey: Guid(93aef0c90c6cc4bbab4421badf861df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-h01-32.png using Guid(93aef0c90c6cc4bbab4421badf861df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1e0cb9a20bfdb217c4665a238bc52b6f') in 0.021972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-h01-128.png
-  artifactKey: Guid(e1b643ebf17b647ce90ab4cda7f208c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-h01-128.png using Guid(e1b643ebf17b647ce90ab4cda7f208c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c818163ce3ad0efbef70050a85cd9ba0') in 0.028261 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-h02-32.png
-  artifactKey: Guid(03f57f72dfb6b483f815eb01d3c00bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-h02-32.png using Guid(03f57f72dfb6b483f815eb01d3c00bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b5a0ee0f73be662763a838564839fa79') in 0.026445 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-h02-128.png
-  artifactKey: Guid(37398ef1a3f164bd396de535ca31d98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-h02-128.png using Guid(37398ef1a3f164bd396de535ca31d98c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b11b8e76119ffde8b8bc78905b3e477c') in 0.030422 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-h03-64.png
-  artifactKey: Guid(b554ed0b05606463da2edcc57c151b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-h03-64.png using Guid(b554ed0b05606463da2edcc57c151b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c819e6fe819787568bcbd7a3757c6b51') in 0.022727 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-h04-32.png
-  artifactKey: Guid(454c55a74b2c74e71ac0203f9067246e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-h04-32.png using Guid(454c55a74b2c74e71ac0203f9067246e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '349061c9418e69ed146430189f9561b8') in 0.025839 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-h04-128.png
-  artifactKey: Guid(ef42ec862c08c4971982d764fbfddb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-h04-128.png using Guid(ef42ec862c08c4971982d764fbfddb31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9e60a29b8bdb4a22a823a28444a9732e') in 0.028147 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-h05-32.png
-  artifactKey: Guid(bfbaefbec9ed04885b76ffaa15a933e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-h05-32.png using Guid(bfbaefbec9ed04885b76ffaa15a933e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2695b396e7acab073af412ff52b2171d') in 0.024131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-h05-128.png
-  artifactKey: Guid(a481b58ac3a1d4533b4803fe2a8b9ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-h05-128.png using Guid(a481b58ac3a1d4533b4803fe2a8b9ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a51a232f15d5a9a277f5289f4141cd99') in 0.027561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-h06-64.png
-  artifactKey: Guid(2f288ee0bef8b42fd842abf14e6c9699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-h06-64.png using Guid(2f288ee0bef8b42fd842abf14e6c9699) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '0fe6ea3cd8dc8fe69c18a695d3aa0482') in 0.038858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/256/spin-h04-256.png
-  artifactKey: Guid(58aea4f22cc9b4045bbf9589d1d4b07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/256/spin-h04-256.png using Guid(58aea4f22cc9b4045bbf9589d1d4b07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c180ffef23eb250dceb8120ec7d7e543') in 0.043127 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.021891 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack04-suitcase2-256.png
-  artifactKey: Guid(6bf728eda2ef1491b9c1b37db01464d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack04-suitcase2-256.png using Guid(6bf728eda2ef1491b9c1b37db01464d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '435db8ba5dea928c5a4ce32e50382f5a') in 0.026955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack04-suitcase3-64.png
-  artifactKey: Guid(064b536b8836948279494c00283d92db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack04-suitcase3-64.png using Guid(064b536b8836948279494c00283d92db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9394c667b98bd7593eda96834812a1f6') in 0.025898 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack04-suitcase3-256.png
-  artifactKey: Guid(9bff51515e12b408bbed5e818057b278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack04-suitcase3-256.png using Guid(9bff51515e12b408bbed5e818057b278) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '090c07e4830a7b5cdca84edbcb1e3dcc') in 0.028552 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack05-chest1-128.png
-  artifactKey: Guid(a7730dce5d48e4ce5b09f3fd14ee19b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack05-chest1-128.png using Guid(a7730dce5d48e4ce5b09f3fd14ee19b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ac3209aab11aa9f2733d9ec517db73a0') in 0.031439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack05-chest2-32.png
-  artifactKey: Guid(ad77abf1acc11446d90576baa049dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack05-chest2-32.png using Guid(ad77abf1acc11446d90576baa049dff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'fbb1a31556e9af60aec405b07f3e89e1') in 0.024908 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack05-chest1-256.png
-  artifactKey: Guid(20220ccfeea6b48c1849c14000059cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack05-chest1-256.png using Guid(20220ccfeea6b48c1849c14000059cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f9f471297d9e7c118a971984debadd01') in 0.026182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack05-chest3-64.png
-  artifactKey: Guid(6e37cfb7d379840c08810577b38403d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack05-chest3-64.png using Guid(6e37cfb7d379840c08810577b38403d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '830325e8b3ebe26562bbf55b95ebb475') in 0.022295 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack06-vault1-32.png
-  artifactKey: Guid(108d7b6114f09458899fe4e3240c438a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack06-vault1-32.png using Guid(108d7b6114f09458899fe4e3240c438a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd31472e61bdbd01009fe7c3e1f65e8ac') in 0.024959 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack06-vault1-128.png
-  artifactKey: Guid(d7df9f561f0264ca1a76cfa11fe05b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack06-vault1-128.png using Guid(d7df9f561f0264ca1a76cfa11fe05b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9690b9ab4252b4dcc2b380fd231535c2') in 0.034622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack05-chest3-128.png
-  artifactKey: Guid(6c968c86a52234c0a837eb5ad92711e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack05-chest3-128.png using Guid(6c968c86a52234c0a837eb5ad92711e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '29db1a61fcb370883d09dfb5aa4c881a') in 0.040506 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack05-chest2-256.png
-  artifactKey: Guid(8d16d2e8470a44eecaeb4f756be86642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack05-chest2-256.png using Guid(8d16d2e8470a44eecaeb4f756be86642) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '2b31bb5d8f1a7d8b9a30d4773af71b87') in 0.044883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.347482 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack04-suitcase2-32.png
-  artifactKey: Guid(f9fac215a3cae46ae8f8d114611721a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack04-suitcase2-32.png using Guid(f9fac215a3cae46ae8f8d114611721a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '3ebbb765b60a1459ff30e346f3402c3c') in 0.023211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack04-suitcase2-128.png
-  artifactKey: Guid(94c1537d9d8964db3891c537c482b7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack04-suitcase2-128.png using Guid(94c1537d9d8964db3891c537c482b7d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5104ac03e7ff5039ed662dbb9cb16385') in 0.033885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack04-suitcase1-128.png
-  artifactKey: Guid(17eaa5715bc3b4819b5f7d2dcf2329cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack04-suitcase1-128.png using Guid(17eaa5715bc3b4819b5f7d2dcf2329cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '728b60138691f69e567027f4748bde99') in 0.039954 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.059306 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack03-bag1-64.png
-  artifactKey: Guid(6fb38007b40f94bdf945205d648c1b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack03-bag1-64.png using Guid(6fb38007b40f94bdf945205d648c1b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'd9b667faa1499344428119274d799c9f') in 0.025104 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack03-bag1-256.png
-  artifactKey: Guid(2c6626ab2d74846479ed5da4ea5db329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack03-bag1-256.png using Guid(2c6626ab2d74846479ed5da4ea5db329) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '09bc2cc6681a7df5b940d3d006661597') in 0.032943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack03-bag2-128.png
-  artifactKey: Guid(fa8f232e6d48547edb2daccfdde1abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack03-bag2-128.png using Guid(fa8f232e6d48547edb2daccfdde1abb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5256fb00e8202334fc92d1606dde7530') in 0.028508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack03-bag3-32.png
-  artifactKey: Guid(4262e154db4b54c05896b376803116c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack03-bag3-32.png using Guid(4262e154db4b54c05896b376803116c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f8c4905585676dcf4ae21166065dafe5') in 0.026423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack03-bag3-256.png
-  artifactKey: Guid(433a884219c1643059afb70981ed2d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack03-bag3-256.png using Guid(433a884219c1643059afb70981ed2d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '774626ffad6ea202b591644f90093822') in 0.048403 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack03-bag2-64.png
-  artifactKey: Guid(6ff3c93ccb0fb4f88ad60611b0ffdfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack03-bag2-64.png using Guid(6ff3c93ccb0fb4f88ad60611b0ffdfeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '24a787720469ad6e7dac946640c43a42') in 0.029230 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/flipDown-32.gif
-  artifactKey: Guid(00076e564285d42e5ba09ba880bbb8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/flipDown-32.gif using Guid(00076e564285d42e5ba09ba880bbb8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ae646066f6298d2e2ca7c64d5ebc2f7c') in 0.024598 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/flipDown-128.gif
-  artifactKey: Guid(0146de71c7fcf4a8482a60b486146103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/flipDown-128.gif using Guid(0146de71c7fcf4a8482a60b486146103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6eb8e22a4d6f61aa06c1b40c9d484ab5') in 0.029387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/flipUp-64.gif
-  artifactKey: Guid(e777e5d20096d47939ec11a978e7b473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/flipUp-64.gif using Guid(e777e5d20096d47939ec11a978e7b473) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1e91fdb936a500b85d31c9e5ed284c23') in 0.026666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Free Poker Chip Icons/Gifs/flipUp-256.gif
-  artifactKey: Guid(7dfa9c42e1a984028a17dc39fe195957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Gifs/flipUp-256.gif using Guid(7dfa9c42e1a984028a17dc39fe195957) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '88e27c97ef092f41a17cbeb02e22c0cc') in 0.027940 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack01-purse1-64.png
-  artifactKey: Guid(33b68a34a6809466184f28b80044ea5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack01-purse1-64.png using Guid(33b68a34a6809466184f28b80044ea5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '61ae8ddfa6f6aff52759e40834bae567') in 0.025763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack01-purse2-32.png
-  artifactKey: Guid(ae100fe42887a4767a35519e61cc6189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack01-purse2-32.png using Guid(ae100fe42887a4767a35519e61cc6189) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '53103ac593c6d41026b9846768c4ca88') in 0.024635 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack01-purse2-64.png
-  artifactKey: Guid(c103e23aa9eaa4bfd8f6e613c5de4e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack01-purse2-64.png using Guid(c103e23aa9eaa4bfd8f6e613c5de4e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4833201de84f048c41bdc0beed06c063') in 0.025995 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack01-purse3-64.png
-  artifactKey: Guid(073c77cba636f4b128ccbc93e7ece641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack01-purse3-64.png using Guid(073c77cba636f4b128ccbc93e7ece641) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4a7363d2f350a9e8f591c6d9280f764e') in 0.029579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack02-bag1-64.png
-  artifactKey: Guid(1c5e719b382094933a9db2d6080520d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack02-bag1-64.png using Guid(1c5e719b382094933a9db2d6080520d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'cfff4b702c35c4820b901a62e2ba4b19') in 0.041140 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack01-purse2-128.png
-  artifactKey: Guid(38970c8d153bf41a3a9151e719118b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack01-purse2-128.png using Guid(38970c8d153bf41a3a9151e719118b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'db6155dcc500f27523e2321ea44ac4d1') in 0.031601 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/32/coin-2-32.png
-  artifactKey: Guid(4060dbca08cdc4253af72304c2449f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/32/coin-2-32.png using Guid(4060dbca08cdc4253af72304c2449f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '7d9e6c7938bd4e2ff339ed92e8e5e1a7') in 0.023555 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/256/coin-2-256.png
-  artifactKey: Guid(bd54b376b4b7c4d0d8ba877d587a82af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/256/coin-2-256.png using Guid(bd54b376b4b7c4d0d8ba877d587a82af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '9e53604ed7e701c2b2da8be287669bc7') in 0.028006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/128/coin-3-128.png
-  artifactKey: Guid(9ff34846471e54b53b77e21cc8691f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/128/coin-3-128.png using Guid(9ff34846471e54b53b77e21cc8691f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5ca0d8baed496169dea33789ec28cebc') in 0.029677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/64/coin-4-64.png
-  artifactKey: Guid(09a782388745747e48d9c5d916dd7b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/64/coin-4-64.png using Guid(09a782388745747e48d9c5d916dd7b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'a8242af07a39eb7ddf05fea8c8555b47') in 0.026383 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/256/coin-4-256.png
-  artifactKey: Guid(501851bf1f5d54a30af2f97b832d435a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/256/coin-4-256.png using Guid(501851bf1f5d54a30af2f97b832d435a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'aea4d30409633057df49fdff9351e8be') in 0.027918 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/32/coin-5-32.png
-  artifactKey: Guid(b69fa493f2e464f399e9252bd72eea0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/32/coin-5-32.png using Guid(b69fa493f2e464f399e9252bd72eea0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c8555babd020429cbcf5fd0537bf8c15') in 0.030448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/256/coin-5-256.png
-  artifactKey: Guid(aec96af2914c247458456d8ade95efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/256/coin-5-256.png using Guid(aec96af2914c247458456d8ade95efe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '25575929b2b19bf849ab6eec30e6009b') in 0.041825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack01-purse3-32.png
-  artifactKey: Guid(ad1abc15622d9429e9e715208137b86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack01-purse3-32.png using Guid(ad1abc15622d9429e9e715208137b86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5c981386bfbe35914fd5a9305f0ca392') in 0.029882 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack01-purse3-256.png
-  artifactKey: Guid(7b3b97e82b193447e92c9d68de4daeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack01-purse3-256.png using Guid(7b3b97e82b193447e92c9d68de4daeff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6d1349b8ff8b6d457509a275b07e53eb') in 0.040102 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/256/coin-1-256.png
-  artifactKey: Guid(7c7ecd6a511a841658e96b2daba5a271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/256/coin-1-256.png using Guid(7c7ecd6a511a841658e96b2daba5a271) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '12bd216c32604b7bbfdb1eefbeb712e2') in 0.044512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Free Poker Chip Icons/Chips/32/coin-4-32.png
-  artifactKey: Guid(2ff5507e8722d4ea899934ddcead7985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Chips/32/coin-4-32.png using Guid(2ff5507e8722d4ea899934ddcead7985) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '868755c2e6cc2e3afb151e2fcd9cbd36') in 0.034056 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.992303 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack02-bag1-128.png
-  artifactKey: Guid(cff30092e30e14fb588f38e1fa1de9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack02-bag1-128.png using Guid(cff30092e30e14fb588f38e1fa1de9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5f1c8a29b3c1cf8198b6f24ed43e206a') in 0.027425 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack02-bag2-32.png
-  artifactKey: Guid(2c04e524fe8314e1d96210c9f922d7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack02-bag2-32.png using Guid(2c04e524fe8314e1d96210c9f922d7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '0a757d4695374dfd984e0fbdcd13e6ed') in 0.036910 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.061747 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack02-bag2-64.png
-  artifactKey: Guid(f5c696c705e77406dbe7744b21ce29d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack02-bag2-64.png using Guid(f5c696c705e77406dbe7744b21ce29d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'cd93c57b0c00cb70eb21fa2a5ce45f4b') in 0.023279 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack02-bag2-256.png
-  artifactKey: Guid(063ef04f770724ecfbc25626d025e499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack02-bag2-256.png using Guid(063ef04f770724ecfbc25626d025e499) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4ec87fede64973bf091220626be93e1b') in 0.041883 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.006148 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack02-bag3-32.png
-  artifactKey: Guid(40431c7ad6f7c4d8b9660d8219f18c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack02-bag3-32.png using Guid(40431c7ad6f7c4d8b9660d8219f18c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'e236d5e392f8b7e57608034293791700') in 0.025964 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack02-bag3-128.png
-  artifactKey: Guid(3f291b4b847464268bd485cae76e805f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack02-bag3-128.png using Guid(3f291b4b847464268bd485cae76e805f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '6eaaac911bf16fbc59b101d0d4fa0127') in 0.046630 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.061361 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack02-bag3-256.png
-  artifactKey: Guid(81b81b286c9254cb6ae28cf0e51bdd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack02-bag3-256.png using Guid(81b81b286c9254cb6ae28cf0e51bdd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '4517533e87f0ce332b70c96c70725b62') in 0.035199 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.940792 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/64/pack06-vault2-64.png
-  artifactKey: Guid(a484a8325e446455586ccdbbbc838012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/64/pack06-vault2-64.png using Guid(a484a8325e446455586ccdbbbc838012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '5f4fa37bb67aeeb70f96652f9a4ba645') in 0.038356 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/256/pack06-vault2-256.png
-  artifactKey: Guid(490a46a19be59430881026e8788cb5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/256/pack06-vault2-256.png using Guid(490a46a19be59430881026e8788cb5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '07c473c4f5dd389385168e16da6b0845') in 0.042805 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.012575 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/32/pack06-vault3-32.png
-  artifactKey: Guid(243c421544eeb40309ea548a2c14fddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/32/pack06-vault3-32.png using Guid(243c421544eeb40309ea548a2c14fddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '55a49b72954f93b66cbf5f322a1438df') in 0.021371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Free Poker Chip Icons/Packs/128/pack06-vault3-128.png
-  artifactKey: Guid(04db3aa36c7d54cf8aa502143c92c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Packs/128/pack06-vault3-128.png using Guid(04db3aa36c7d54cf8aa502143c92c9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '496d3edb2cc5055dde1a0eab3a4ea76c') in 0.038207 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.210764 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/128/spin-h06-128.png
-  artifactKey: Guid(45c311b89443b46069233a765b835624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/128/spin-h06-128.png using Guid(45c311b89443b46069233a765b835624) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '1f979618efeea352f9f37b2610530ecb') in 0.032533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/32/spin-h07-32.png
-  artifactKey: Guid(53d50050f211947698105e9ca118393a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/32/spin-h07-32.png using Guid(53d50050f211947698105e9ca118393a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f4eb768f4aaecc6a8d3ecb3e6cd84a9f') in 0.038268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.018551 seconds.
-  path: Assets/Free Poker Chip Icons/Sprites/64/spin-h07-64.png
-  artifactKey: Guid(eb8dd1da5d5cb42369e3ea5ebab1538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Poker Chip Icons/Sprites/64/spin-h07-64.png using Guid(eb8dd1da5d5cb42369e3ea5ebab1538f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'c46e0c2b1645daa447dd4fa99c25c2eb') in 0.031062 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 14.060109 seconds.
-  path: Assets/Liam_Test
-  artifactKey: Guid(a612814fbaa2f91429699cd25dd289d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test using Guid(a612814fbaa2f91429699cd25dd289d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'fe7a948383c67eb94c88538f46282307') in 0.000647 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.763 seconds
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.802 seconds
-Domain Reload Profiling: 2560ms
-	BeginReloadAssembly (246ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (385ms)
-		LoadAssemblies (501ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (36ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (12ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1802ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (712ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (89ms)
-			ProcessInitializeOnLoadAttributes (551ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (21ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 11.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3132 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (28.5 KB). Loaded Objects now: 3635.
-Memory consumption went from 123.3 MB to 123.2 MB.
-Total: 2.875100 ms (FindLiveObjects: 0.242300 ms CreateObjectMapping: 0.143400 ms MarkObjects: 2.445100 ms  DeleteObjects: 0.043100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:scripting/monoscript/fileName/getBetType.cs: 05aee93da1c86c0294c308bc6745efaf -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:Assembly-CSharp: b5034b6d74a994e583b80a145e725356 -> d497889d6f7219a2ffb0e5982624a5e6
-========================================================================
-Received Import Request.
-  Time since last request: 49.731365 seconds.
+  Time since last request: 0.000276 seconds.
   path: Assets/Liam_Test/assets/pass.png
   artifactKey: Guid(136e2031790870e4b8e9c8531b9f3bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Liam_Test/assets/pass.png using Guid(136e2031790870e4b8e9c8531b9f3bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'fccdeadaa3d03135d1aafc570e0663f2') in 0.117242 seconds
+ -> (artifact id: '59fb5ffb6555124e2d6d973156e293d0') in 0.153599 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 5.124354 seconds.
-  path: Assets/Liam_Test/assets/DONTpass.png
-  artifactKey: Guid(842f01deb2eed1a449a9e7cd9a540d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/DONTpass.png using Guid(842f01deb2eed1a449a9e7cd9a540d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Liam_Test/assets/don.prefab
+  artifactKey: Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/don.prefab using Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e7380fdc0ff749828628fcdb7b1eeab3') in 0.073505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 101.544210 seconds.
+  path: Assets/Liam_Test/assets/diceImages
+  artifactKey: Guid(4e21a75e350e2624288b56df63339dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/diceImages using Guid(4e21a75e350e2624288b56df63339dcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2ff4e91e517f2114514308735a90b8e6') in 0.001009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.083424 seconds.
+  path: Assets/Liam_Test/assets/diceImages/1.png
+  artifactKey: Guid(2da6ea780769e6c458b51557b7209960) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/diceImages/1.png using Guid(2da6ea780769e6c458b51557b7209960) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b1e030d428af0ef6d522888c61c9b732') in 0.030956 seconds
+ -> (artifact id: '2b835ae9d3fd636b3da69eef3733afb3') in 0.047944 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 54.518486 seconds.
-  path: Assets/Liam_Test/assets/pas.prefab
-  artifactKey: Guid(d077fbe54a61d6c4f806abb2a1469bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/pas.prefab using Guid(d077fbe54a61d6c4f806abb2a1469bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8671bd84c9871470d7a09e911e171e1a') in 0.000813 seconds
+  Time since last request: 0.000040 seconds.
+  path: Assets/Liam_Test/assets/diceImages/4.png
+  artifactKey: Guid(a4e66aaf7f7de044e864bac0fe5fd8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/diceImages/4.png using Guid(a4e66aaf7f7de044e864bac0fe5fd8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c497f68f5878f109cf6fa3a8ee71ef8c') in 0.039442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Liam_Test/assets/diceImages/6.png
+  artifactKey: Guid(b9f15b2757d4b9f40ac9b0f97a53f024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/diceImages/6.png using Guid(b9f15b2757d4b9f40ac9b0f97a53f024) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6da1e912b126f75470ba2ab6be447dc2') in 0.039908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Liam_Test/assets/diceImages/5.png
+  artifactKey: Guid(99dad11cbc94f8947a566ca534a186cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/diceImages/5.png using Guid(99dad11cbc94f8947a566ca534a186cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f5a1659a65cf6d2754cf9accf467c665') in 0.038245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.389770 seconds.
+  path: Assets/Liam_Test/assets/playMore.cs
+  artifactKey: Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/playMore.cs using Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '47d373aef7e24e1af5aeb93ad177da0e') in 0.000947 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.791044 seconds.
-  path: Assets/Liam_Test/assets/don.prefab
-  artifactKey: Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/don.prefab using Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b63c2accb02b0b3eaf7c62b55d2f3257') in 0.000806 seconds
+  Time since last request: 126.130309 seconds.
+  path: Assets/Liam_Test/assets/playMore.cs
+  artifactKey: Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/playMore.cs using Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6bb8f3d8716c326be23f096a8e550703') in 0.001449 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.034609 seconds.
-  path: Assets/Liam_Test/assets/pas.prefab
-  artifactKey: Guid(d077fbe54a61d6c4f806abb2a1469bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/pas.prefab using Guid(d077fbe54a61d6c4f806abb2a1469bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: '8671bd84c9871470d7a09e911e171e1a') in 0.000738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 31.027397 seconds.
-  path: Assets/Liam_Test/assets/don.prefab
-  artifactKey: Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Liam_Test/assets/don.prefab using Guid(af8e8f27fea9873498a8bb6b577419b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'b63c2accb02b0b3eaf7c62b55d2f3257') in 0.001936 seconds
+  Time since last request: 47.616714 seconds.
+  path: Assets/Liam_Test/assets/playMore.cs
+  artifactKey: Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Liam_Test/assets/playMore.cs using Guid(e2488e6a0f872aa4585b6f49b9afe711) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a68f9fb7a54620ab9652d366f2210d0f') in 0.000968 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
