@@ -4,13 +4,17 @@ using UnityEngine;
 
 namespace CrapsGame
 {
+    
     public class Craps
     {
-        private ROLL rollScript;
+        public ROLL rollScript;
         private GameStatus gameStatus;
+        private GamePhase phase;
+        
 
         private enum DiceSums { SNAKE_EYES = 2, TREY = 3, SEVEN = 7, YO_LEVEN = 11, BOX_CARS = 12 }
         private enum GameStatus { WIN, LOSE, PLAY_MORE }
+        private enum GamePhase{COME_OUT, POINT_PHASE}
 
         public int Sum { get; private set; }
         public int Point { get; private set; }
@@ -29,10 +33,13 @@ namespace CrapsGame
                 Sum = rollScript.GetDiceSum();
                 EvaluateRoll();
             }
+            
         }
 
         private void EvaluateRoll()
         {
+            if (phase == GamePhase.COME_OUT)
+            {
             switch ((DiceSums)Sum)
             {
                 case DiceSums.SEVEN:
@@ -52,5 +59,44 @@ namespace CrapsGame
                     break;
             }
         }
+        else if (phase == GamePhase.POINT_PHASE)
+        {
+            if (Sum == Point)
+            {
+                gameStatus = GameStatus.WIN;
+
+            }
+            else if (Sum ==(int)DiceSums.SEVEN)
+            {
+                gameStatus = GameStatus.LOSE;
+            }
+            else {
+                Debug.Log($"Rolling again, Current roll: {Sum}");
+            }
+        }
+    }  
+
+    private void ResetGame()
+    {
+        gameStatus = GameStatus.PLAY_MORE;
+        phase = GamePhase.COME_OUT;
+        Point = 0;
+    
     }
+
+    private void DisplayGameResult()
+    {
+        if (gameStatus == GameStatus.WIN)
+        {
+            Debug.Log("You won!");
+
+        }
+        else if (gameStatus == GameStatus.LOSE)
+        {
+            Debug.Log("You lost!");
+        }
+        ResetGame();
+    }
+
+    }  
 }
