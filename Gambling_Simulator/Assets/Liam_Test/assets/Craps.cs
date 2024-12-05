@@ -5,15 +5,15 @@ using UnityEngine;
 namespace CrapsGame
 {
     
-    public class Craps
+    public class Craps : MonoBehaviour 
     {
         public ROLL rollScript;
-        private GameStatus gameStatus;
+        public GameStatus gameStatus;
         private GamePhase phase;
         
 
         private enum DiceSums { SNAKE_EYES = 2, TREY = 3, SEVEN = 7, YO_LEVEN = 11, BOX_CARS = 12 }
-        private enum GameStatus { WIN, LOSE, PLAY_MORE }
+        public enum GameStatus { WIN, LOSE, PLAY_MORE }
         private enum GamePhase{COME_OUT, POINT_PHASE}
 
         public int Sum { get; private set; }
@@ -36,7 +36,7 @@ namespace CrapsGame
             
         }
 
-        private void EvaluateRoll()
+        public void EvaluateRoll()
         {
             if (phase == GamePhase.COME_OUT)
             {
@@ -76,7 +76,7 @@ namespace CrapsGame
         }
     }  
 
-    private void ResetGame()
+    public void ResetGame()
     {
         gameStatus = GameStatus.PLAY_MORE;
         phase = GamePhase.COME_OUT;
@@ -84,7 +84,7 @@ namespace CrapsGame
     
     }
 
-    private void DisplayGameResult()
+    public void DisplayGameResult()
     {
         if (gameStatus == GameStatus.WIN)
         {

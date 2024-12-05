@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class playMore: MonoBehaviour{
+public class betType: MonoBehaviour{
 
-    public int yesNo;
+    public int yesNo=-1;
     public Canvas Canvas;
    public GameObject yes;
    public GameObject no;
@@ -27,7 +27,7 @@ public void play() {
 
 }
 
-void UpdateValue(int index)
+public void UpdateValue(int index)
     {
         // Increment the value associated with this button
         yesNo=index;

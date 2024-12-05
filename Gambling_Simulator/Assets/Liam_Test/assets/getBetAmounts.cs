@@ -6,12 +6,14 @@ using UnityEngine.EventSystems;
 
 public class getBetAmounts: MonoBehaviour{
 
-    public int value;
+    public int value=0;
     public Canvas Canvas;
    public GameObject five;
    public GameObject ten;
     public GameObject twofive;
     public GameObject fifty;
+
+    public GameObject no;
 
       private GameObject fivedolla;
       private  GameObject tendolla;
@@ -27,6 +29,7 @@ public void fart() {
       tendolla=Instantiate(ten,Canvas.transform);
   twentyfivedolla=Instantiate(twofive,Canvas.transform);
    fiftydolla=Instantiate(fifty,Canvas.transform);
+   no=Instantiate(no,Canvas.transform);
 
   fivedolla.GetComponent<Button>().onClick.AddListener(() => UpdateValue(5));
 
@@ -36,14 +39,26 @@ public void fart() {
 
   fiftydolla.GetComponent<Button>().onClick.AddListener(() => UpdateValue(50));
 
+  no.GetComponent<Button>().onClick.AddListener(() => quit());
+
+  
+
+
 }
 
-void UpdateValue(int index)
+public void quit(){
+
+
+
+}
+
+
+public void UpdateValue(int index)
     {
         // Increment the value associated with this button
         value=index;
         
-
+      Destroy(no);
       Destroy(fivedolla);
       Destroy(tendolla);
       Destroy(twentyfivedolla);
