@@ -19,10 +19,14 @@ public class ROLL : MonoBehaviour{
 
         diceone.ChangeSprite(dice1-1);
         dicetwo.ChangeSprite(dice2-1);
+        
 
     }
 
-
+    public int GetDiceSum()
+    {
+        return dice1 + dice2;
+    }
     
 
 

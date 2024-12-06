@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<<< Updated upstream:Gambling_Simulator/Assets/Liam_Test/Chips/getBetAmounts.cs.meta
+<<<<<<< HEAD
+guid: d6d3bc756b42f03488ff3aba6577dd9e
+=======
+guid: 33b8e6afe79c1444cb40894e838a85fc
+>>>>>>> 4a530536de609cb43b1936e499cf0c5a141445dd
+========
+guid: 9267c39672387b84ab0874288fa46660
+>>>>>>>> Stashed changes:Gambling_Simulator/Assets/Liam_Test/assets/Craps Game.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
