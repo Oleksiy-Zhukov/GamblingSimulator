@@ -10,10 +10,12 @@ public class PlayerInfo : MonoBehaviour
 
     public int handValue=0;
     private int balance = 1000; 
+    //Checking the first card if its an ace, doing this for insurance bet
+    public bool card1Ace = false;
 
     public GameObject[] hand; //collection of cards
     public int cardIndex = 0;  //index of next card in deck
-   
+    
 
     //tracking aces for 1 to 11 conversions
     List<CardInfo> aceList = new List<CardInfo>();
@@ -21,7 +23,11 @@ public class PlayerInfo : MonoBehaviour
     public void startHand() //gives two cards at start of hand
     {
         getCard();
+        if(handValue == 11){
+            card1Ace = true;
+        }
         getCard();
+        
     }
 
     //determines if ace should be worth 1 or 11 
@@ -79,6 +85,7 @@ public class PlayerInfo : MonoBehaviour
         }
         cardIndex = 0;
         handValue = 0; 
+        card1Ace = false;
         aceList = new List<CardInfo>(); //resets any ace count
     }
  
