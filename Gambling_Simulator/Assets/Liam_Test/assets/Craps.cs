@@ -23,6 +23,7 @@ namespace CrapsGame
         {
             this.rollScript = rollScript;
             gameStatus = GameStatus.PLAY_MORE;
+            phase= GamePhase.COME_OUT;
         }
 
         public void PlayGame()
@@ -74,6 +75,7 @@ namespace CrapsGame
                 Debug.Log($"Rolling again, Current roll: {Sum}");
             }
         }
+
     }  
 
     public void ResetGame()

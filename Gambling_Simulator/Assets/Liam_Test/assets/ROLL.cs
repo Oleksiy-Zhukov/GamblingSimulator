@@ -19,6 +19,7 @@ public class ROLL : MonoBehaviour{
 
         diceone.ChangeSprite(dice1-1);
         dicetwo.ChangeSprite(dice2-1);
+        
 
     }
 

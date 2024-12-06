@@ -205,7 +205,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bet: {fileID: 0}
   victory: 0
-  crapsGame: {fileID: 0}
 --- !u!1 &386275351
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bet: {fileID: 563885555}
   victory: 1
-  crapsGame: {fileID: 563885556}
 --- !u!114 &563885555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,6 +517,7 @@ MonoBehaviour:
   ten: {fileID: 1515731002353191237, guid: cf088b21cd91e5646a6ba04ad815ca91, type: 3}
   twofive: {fileID: 1451504733522154877, guid: faeee6719b2da0c49953677a927de10c, type: 3}
   fifty: {fileID: 6204201911234603056, guid: 64f5f9a19e8bbc6498b4a47c0876af58, type: 3}
+  crapsGame: {fileID: 563885556}
   no: {fileID: 8523102937198227799, guid: bad5fba0a9205e54fa5333300521029d, type: 3}
 --- !u!114 &563885556
 MonoBehaviour:
@@ -533,7 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rollScript: {fileID: 563885553}
-  gameStatus: 0
+  gameStatus: 2
 --- !u!1 &628985561
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1055,9 +1054,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 563885554}
-        m_TargetAssemblyTypeName: CrapsGame.PlayerBets, Assembly-CSharp
-        m_MethodName: hateUnity
+      - m_Target: {fileID: 563885555}
+        m_TargetAssemblyTypeName: CrapsGame.getBetAmounts, Assembly-CSharp
+        m_MethodName: fart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -18,7 +18,7 @@ namespace CrapsGame
 
         public bool victory;
     
-        public Craps crapsGame; // Reference to the Craps game
+        
 
 
         void hateUnity()
