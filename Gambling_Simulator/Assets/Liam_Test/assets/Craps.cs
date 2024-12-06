@@ -2,103 +2,96 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CrapsGame
-{
+
+
     
     public class Craps : MonoBehaviour 
     {
+        private bool pass;
         public ROLL rollScript;
         public GameStatus gameStatus;
         private GamePhase phase;
         
-
-        private enum DiceSums { SNAKE_EYES = 2, TREY = 3, SEVEN = 7, YO_LEVEN = 11, BOX_CARS = 12 }
+        public bool roundOver=false;
+        public bool win=false;
+    
         public enum GameStatus { WIN, LOSE, PLAY_MORE }
         private enum GamePhase{COME_OUT, POINT_PHASE}
 
-        public int Sum { get; private set; }
-        public int Point { get; private set; }
 
-        public Craps(ROLL rollScript)
-        {
-            this.rollScript = rollScript;
-            gameStatus = GameStatus.PLAY_MORE;
-            phase= GamePhase.COME_OUT;
-        }
+        public int point=0;
 
-        public void PlayGame()
-        {
-            while (gameStatus == GameStatus.PLAY_MORE)
-            {
-                rollScript.diceroll();
-                Sum = rollScript.GetDiceSum();
-                EvaluateRoll();
-            }
-            
+    
+        
+
+
+        public void PlayGame(bool bet){
+
+            pass=bet;
+            EvaluateRoll();
+
         }
 
         public void EvaluateRoll()
         {
-            if (phase == GamePhase.COME_OUT)
-            {
-            switch ((DiceSums)Sum)
-            {
-                case DiceSums.SEVEN:
-                case DiceSums.YO_LEVEN:
-                    gameStatus = GameStatus.WIN;
-                    Point = 0;
-                    break;
-                case DiceSums.SNAKE_EYES:
-                case DiceSums.TREY:
-                case DiceSums.BOX_CARS:
-                    gameStatus = GameStatus.LOSE;
-                    Point = 0;
-                    break;
-                default:
-                    gameStatus = GameStatus.PLAY_MORE;
-                    Point = Sum;
-                    break;
-            }
-        }
-        else if (phase == GamePhase.POINT_PHASE)
-        {
-            if (Sum == Point)
-            {
-                gameStatus = GameStatus.WIN;
+
+            int sum;
+            
+            while(roundOver==false){
+                rollScript.diceroll();
+                sum=rollScript.GetDiceSum();
+                if(point==0){
+                    if(sum == 11||sum ==7){
+                        point=0;
+                        if(pass){
+                            win=true;
+                        }else{
+                            win=false;
+                        }
+                        roundOver=true;
+                    }else if(sum == 2||sum ==3||sum ==12){
+                        point=0;
+                        if(pass){
+                            win=false;
+                        }else{
+                            win=true;
+                        }  
+                        roundOver=true;
+
+                    }else{
+                        point=sum;
+                        
+                    }
+                }else{
+                    if(sum==point){
+                        if(pass){
+                            win=true;
+                        }else{
+                            win=false;
+                        }
+
+                        roundOver=true;
+                    }else if(sum==7){
+                        if(pass){
+                            win=false;
+                        }else{
+                            win=true;
+                        }
+                        roundOver=true;
+                    }
+
+
+                }
 
             }
-            else if (Sum ==(int)DiceSums.SEVEN)
-            {
-                gameStatus = GameStatus.LOSE;
+            if(win){
+                Debug.Log("win");
+            }else{
+                Debug.Log("Lose");
             }
-            else {
-                Debug.Log($"Rolling again, Current roll: {Sum}");
-            }
+
         }
 
     }  
 
-    public void ResetGame()
-    {
-        gameStatus = GameStatus.PLAY_MORE;
-        phase = GamePhase.COME_OUT;
-        Point = 0;
-    
-    }
 
-    public void DisplayGameResult()
-    {
-        if (gameStatus == GameStatus.WIN)
-        {
-            Debug.Log("You won!");
-
-        }
-        else if (gameStatus == GameStatus.LOSE)
-        {
-            Debug.Log("You lost!");
-        }
-        ResetGame();
-    }
-
-    }  
-}

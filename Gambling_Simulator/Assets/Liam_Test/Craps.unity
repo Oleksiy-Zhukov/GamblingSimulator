@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 273744551}
   - component: {fileID: 273744550}
   - component: {fileID: 273744553}
+  - component: {fileID: 273744554}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -203,8 +204,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872bd4403cab54c4aab5c3d9235d23a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balance: 2000
   bet: {fileID: 0}
   victory: 0
+--- !u!114 &273744554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273744549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe9da2d8a4acd64c8ebab1585009e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &386275351
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872bd4403cab54c4aab5c3d9235d23a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balance: 2000
   bet: {fileID: 563885555}
   victory: 1
 --- !u!114 &563885555
@@ -517,8 +532,12 @@ MonoBehaviour:
   ten: {fileID: 1515731002353191237, guid: cf088b21cd91e5646a6ba04ad815ca91, type: 3}
   twofive: {fileID: 1451504733522154877, guid: faeee6719b2da0c49953677a927de10c, type: 3}
   fifty: {fileID: 6204201911234603056, guid: 64f5f9a19e8bbc6498b4a47c0876af58, type: 3}
+  finish: {fileID: 8365494974914685631, guid: 0617b690bf455a5448158fc2a12d3d67, type: 3}
   crapsGame: {fileID: 563885556}
   no: {fileID: 8523102937198227799, guid: bad5fba0a9205e54fa5333300521029d, type: 3}
+  pas: {fileID: 7478643915661601524, guid: d077fbe54a61d6c4f806abb2a1469bd5, type: 3}
+  dontpas: {fileID: 190373278607385036, guid: af8e8f27fea9873498a8bb6b577419b2, type: 3}
+  passBet: 0
 --- !u!114 &563885556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,6 +552,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rollScript: {fileID: 563885553}
   gameStatus: 2
+  roundOver: 0
+  win: 0
+  point: 0
 --- !u!1 &628985561
 GameObject:
   m_ObjectHideFlags: 0
